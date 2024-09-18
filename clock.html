@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<head>
+    <title>Часовник</title>
+    <meta charset="utf-8">
+    <style>
+        @font-face {
+            font-family: 'AcariSans';
+            src: url(Fonts/AcariSans-Regular.ttf);
+        }
+        p {
+            font-size: 1.6rem;
+            font-family: 'AcariSans';
+            font-weight: 800;
+            margin: auto;
+            width: 800px;
+            padding: 12px 4px;
+            text-align: center;
+            color: #ffffff;
+            user-select: none;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+        #clock, #calendar {
+            font-size: 3rem;
+        }
+        #clock:hover, #calendar:hover {
+            transform: scale(1.2);
+            letter-spacing: 6px;
+        }
+        div {
+            transform: translateY(30vh);
+        }
+        body {
+            background-image: linear-gradient(to bottom, rgb(40, 60, 50), rgb(5, 7, 6));
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body onload="time()" style="overflow: hidden;">
+    <div>
+        <p>Часовник</p>
+        <p id="clock"></p>
+        <p>Календар</p>
+        <p id="calendar"></p>
+    </div>
+    <script>
+        let month = ["Януари", "Февруари", "Март", "Април", "Май", "Юни", "Юни", "Август", "Септември", "Октомври", "Ноември", "Декември"];
+        function time() {
+            const today = new Date();
+            let h = format(today.getHours());
+            let m = format(today.getMinutes());
+            let s = format(today.getSeconds());
+            
+            let d = format(today.getDate());
+            let mm = today.getMonth();
+            let y = today.getFullYear();
+            
+            document.getElementById("calendar").innerHTML = d + " " + month[mm] + ", " + y;
+            document.getElementById("clock").innerHTML = h + ":" + m + ":" + s;
+            setTimeout(time, 1000);
+        }
+        function format(i) {
+            if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+            return i;
+        }
+    </script>
+</body>

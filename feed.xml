@@ -3,12 +3,53 @@
     <title>Test website</title>
     <link href="https://kiiiiiiiiavailable.github.io/feed.xml" rel="self" />
     <link href="https://kiiiiiiiiavailable.github.io" />
-    <updated>2024-09-19T21:05:18+03:00</updated>
+    <updated>2024-09-20T10:17:47+03:00</updated>
     <author>
         <name>Test</name>
     </author>
     <id>https://kiiiiiiiiavailable.github.io</id>
 
+    <entry>
+        <title>Още един пост</title>
+        <author>
+            <name>Test</name>
+        </author>
+        <link href="https://kiiiiiiiiavailable.github.io/oshche-edin-post/"/>
+        <id>https://kiiiiiiiiavailable.github.io/oshche-edin-post/</id>
+
+        <updated>2024-09-20T10:17:47+03:00</updated>
+            <summary>
+                <![CDATA[
+                    Lorem ipsum
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Lorem <a href="https://kiiiiiiiiavailable.github.io/gallery/" target="_blank" rel="noopener noreferrer">ipsum</a></p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Заглавие</title>
+        <author>
+            <name>Test</name>
+        </author>
+        <link href="https://kiiiiiiiiavailable.github.io/zaglavie/"/>
+        <id>https://kiiiiiiiiavailable.github.io/zaglavie/</id>
+
+        <updated>2024-09-20T09:18:06+03:00</updated>
+            <summary>
+                <![CDATA[
+                    Първи параграф ЛТДГ?
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Първи параграф</p>
+<h1>ЛТДГ?</h1>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Post</title>
         <author>
